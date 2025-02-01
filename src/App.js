@@ -162,7 +162,7 @@ function App() {
           renderWorkoutDetails(selectedDay)
         ) : (
           <div className="welcome">
-            <div style={{ width: "70%", marginTop: "80px" }}>
+            <div style={{ width: "70%", marginTop: "100px" }}>
               Antrenman planına hoş geldin! Yukarıdan gününü seç ve hemen başlayalım, hadi bakalım!
             </div>
             <img src={motivasyon} alt="Motivation" style={{ maxWidth: "100%", height: "auto" }} />
