@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Pacifico', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Yatay taşmayı önlemek için */
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  background-color: #FFE3EF;
+  display: flex;
+  flex-direction: column;
+  width: 100vw; /* Ekran genişliği ile tam uyumlu olacak şekilde */
+  height: 100vh; /* Tam ekran yükseklik */
+  overflow: hidden; /* İçerik taşarsa gizle */
+}
+
+.activity-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 30px;
+}
+
+.activity-card {
+  flex: 1 1 30%;
+  max-width: 300px;
+  background-color: #fff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.329);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.activity-icon {
+  font-size: 40px;
+  margin-right: 10px;
+  color: #ffffff !important;
+  background-color: #6a4c93;
+  padding: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.activity-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.activity-icon {
+  font-size: 40px;
+  margin-right: 10px;
+  color: #6a4c93;
+}
+
+.activity-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.activity-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.activity-details {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.progress-label {
+  font-size: 14px;
+  color: #333;
+}
+
+.progress-percent {
+  font-size: 14px;
+  color: #333;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #6a4c93;
+  border-radius: 5px;
+}
+
+.current-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.days-left {
+  font-size: 14px;
+  color: #fb2649;
+  font-weight: 900;
+  background-color: rgb(255, 188, 207);
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right input {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.search-container input {
+  border-radius: 20px;
+}
+.search-container {
+  position: relative;
+}
+
+.search-icon {
+  color: rgb(64, 64, 64);
+  margin-right: 15px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.search-container input[type="text"] {
+  padding-right: 30px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 40px;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.sidebar {
+  width: 100%;
+  background-color: #6a4c93 !important;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 30px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding:8px 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex; /* Flexbox kullanarak içeriğin yatayda düzenlenmesini sağlar */
+  justify-content: space-around; /* İkonlar arasında eşit boşluk bırakır */
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background-color: #825acb;
+  border-radius: 12px;
+}
+
+.fa-icon {
+  font-size: 24px;
+}
+.main-content {
+  width: 100%;  /* Ensures the main content takes full width of its parent */
+  display: flex;  /* Centers the child content */
+  justify-content: center;  /* Aligns content horizontally in the center */
+  align-items: center;  /* Aligns content vertically in the center */
+  overflow: hidden;  /* Hides any overflow */
+}
+
+.main-content img {
+  max-width: 100%;  /* Ensures image does not exceed the width of its container */
+  height: auto;  /* Maintains aspect ratio */
+  object-fit: contain;  /* Ensures the full image is visible */
+}
+
+.welcome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.workout-details-container {
+  max-height: 93vh; /* Adjust based on your layout needs */
+  overflow-y: auto; /* Enables vertical scrolling */
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%; /* Ensure it fits in its parent container */
+}
+
+
+.workout-details {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap to the next line */
+  justify-content: space-evenly; /* Evenly spaces the cards horizontally */
+  align-items: flex-start; /* Aligns items at the start of the flex container */
+}
+
+.activity-card {
+  flex: 1 1 100%; /* Takes full width in smaller screens */
+  min-width: 300px; /* Minimum width of each card */
+  background-color: #fff;
+  margin: 10px; /* Margin around each card */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.329);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.activity-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Aligns items vertically in the center */
+  gap: 10px; /* Space between text and image */
+}
+
+.exercise-image {
+  width: 200px; /* Fixed width, adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded corners for the image */
+}
+
+.exercise-video-link {
+  margin-top: 10px; /* Space above the link */
+  display: inline-block; /* Ensures the link does not stretch across the container */
+  color: #007bff; /* Bootstrap's link color for consistency */
+  text-decoration: none; /* Removes underline */
+}
+
+.activity-icon {
+  font-size: 24px; /* Size of icons */
+  color: #6a4c93; /* Theme color */
+}
+
+.activity-name {
+  font-weight: bold;
+  flex-grow: 1; /* Allows the name to fill available space */
+}
+
+.exercise-image {
+  max-width: 100%; /* Ensures image does not overflow its container */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Covers the set dimensions, useful if dimensions are fixed */
+}
+/* Cardio and Cooldown Section Styles */
+.cardio-section, .cooldown-section {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #fbfbfb;  /* Light background to distinguish sections */
+  border-left: 5px solid #6a4c93;  /* Left border for emphasis */
+  border-radius: 8px;
+}
+
+.cardio-header, .cooldown-header {
+  font-size: 20px;  /* Larger font size for headers */
+  font-weight: bold;  /* Bold font weight */
+  color: #6a4c93;  /* Theme color for headers */
+  margin-bottom: 10px;
+}
+
+.cardio-content, .cooldown-content {
+  font-size: 16px;  /* Slightly larger text for readability */
+  color: #333;  /* Darker text for better contrast */
+  line-height: 1.5;  /* Improved line spacing */
+}
+
+/* General Section Styling */
+.section-header {
+  font-size: 22px;  /* Uniform size for all section headers */
+  color: #4a148c;  /* Slightly different color for variety */
+  margin-bottom: 5px;
+}
+
+.section-content {
+  padding: 10px;
+  background-color: #fff;  /* White background for content */
+  border-radius: 5px;  /* Rounded corners for the content box */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);  /* Subtle shadow for depth */
+}
+
+.activity-card {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.activity-card.active {
+  background-color: #d4edda; /* Light green background for active cards */
+}
