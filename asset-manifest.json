@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/fitness-tracker/static/css/main.4289b105.css",
-    "main.js": "/fitness-tracker/static/js/main.b0e3ef24.js",
+    "main.js": "/fitness-tracker/static/js/main.1f3dbc1c.js",
     "static/js/488.33e7bf89.chunk.js": "/fitness-tracker/static/js/488.33e7bf89.chunk.js",
     "static/media/profil2.PNG": "/fitness-tracker/static/media/profil2.9f5641c8bdfe36858c95.PNG",
     "static/media/motivasyon.jpg": "/fitness-tracker/static/media/motivasyon.2e6bdcf89f4d168c85ff.jpg",
     "index.html": "/fitness-tracker/index.html",
     "main.4289b105.css.map": "/fitness-tracker/static/css/main.4289b105.css.map",
-    "main.b0e3ef24.js.map": "/fitness-tracker/static/js/main.b0e3ef24.js.map",
+    "main.1f3dbc1c.js.map": "/fitness-tracker/static/js/main.1f3dbc1c.js.map",
     "488.33e7bf89.chunk.js.map": "/fitness-tracker/static/js/488.33e7bf89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4289b105.css",
-    "static/js/main.b0e3ef24.js"
+    "static/js/main.1f3dbc1c.js"
   ]
 }
